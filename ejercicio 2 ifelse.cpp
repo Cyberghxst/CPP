@@ -1,5 +1,5 @@
 /*Determinar si un alumno aprueba o reprueba un curso, 
-sabiendo que aprobará si su promedio de tres calificaciones es mayor o igual a 70; 
+sabiendo que aprobarÃ¡ si su promedio de tres calificaciones es mayor o igual a 70; 
 en caso contrario reprueba.*/
 #include<stdio.h>
 #include<stdlib.h>
@@ -18,14 +18,12 @@ int main(){
 	scanf("%d", &p3);
 	promediogeneral=(p1+p2+p3)/3;
 	system("cls");
-	if (promediogeneral>=70)
-	{		
-	system("color A0");
-	printf("\n\n\n\t\t\t¡Felicidades! Aprobaste con %d \n\n\n\t\t\t", promediogeneral);
+	if (promediogeneral>=70){		
+		system("color A0");
+		printf("\n\n\n\t\t\tÂ¡Felicidades! Aprobaste con %d \n\n\n\t\t\t", promediogeneral);
 	}
-	else
-	{
-	system("color 40");
-	printf("\n\n\n\t\t\t¡Rayos! Tu calificación es %d \n\n\n\t\t\t", promediogeneral);	
+	else{
+		system("color 40");
+		printf("\n\n\n\t\t\tÂ¡Rayos! Tu calificaciÃ³n es %d \n\n\n\t\t\t", promediogeneral);	
 	}
 }
