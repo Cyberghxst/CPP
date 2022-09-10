@@ -1,5 +1,5 @@
-/*En un almacÈn se hace un 20% de descuento a los clientes cuya compra supere los $1000 
-øCu·l ser· la cantidad que pagar· una persona por su compra?*/
+/*En un almac√©n se hace un 20% de descuento a los clientes cuya compra supere los $1000 
+¬øCu√°l ser√° la cantidad que pagar√° una persona por su compra?*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
@@ -13,15 +13,12 @@ int main(){
 	scanf("%f",&compras);
 	descuento=compras*0.20;
 	total=compras-descuento;
-	if(compras>1000)
-	{
+	if(compras>1000) {
 		system("color 80");
 		printf("\n\t\t\tTu compra supera los 1000 pesos, tienes un descuento del 20 porciento en el total de tu compra");
-		printf("\n\t\t\tPagar·s %.0f ",total); puts("pesos");
-	}
-	else
-	{
+		printf("\n\t\t\tPagar√°s %.0f ",total); puts("pesos");
+	} else {
 		system("color 80");
-		printf("\n\t\t\tPagar·s %.0f ",compras); puts("pesos");
+		printf("\n\t\t\tPagar√°s %.0f ",compras); puts("pesos");
 	}
 }
