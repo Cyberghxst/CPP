@@ -1,5 +1,5 @@
-/*Calcular el número de pulsaciones que debe tener una persona por cada 10 segundos de ejercicio aeróbico; 
-la fórmula que se aplica cuando el sexo es femenino es: 
+/*Calcular el nÃºmero de pulsaciones que debe tener una persona por cada 10 segundos de ejercicio aerÃ³bico; 
+la fÃ³rmula que se aplica cuando el sexo es femenino es: 
 num. pulsaciones=(220 - edad)/10 
 y si el sexo es masculino: 
 num. pulsaciones=(210 - edad)/10*/
@@ -16,26 +16,20 @@ int main(){
 	printf("\n\t\t\tPorfavor, indica tu sexo ");
 	printf("\n\t\t\t1 para mujer, o 2 para hombre ");
 	scanf("%f", &sexo);
-	if(sexo==1)
-	{
+	if(sexo==1) {
 	pulsaciones=(220-edad)/10;
 	system("cls");
 	system("color 90");
-	printf("\n\t\t\tEl número de pulsaciones por cada 10 segundos de ejercicio es %.1f ",pulsaciones); puts("BPM.");
-}
-else
-if(sexo==2) 
-{
+	printf("\n\t\t\tEl nÃºmero de pulsaciones por cada 10 segundos de ejercicio es %.1f ",pulsaciones); puts("BPM.");
+} else if(sexo==2) {
 	pulsaciones=(210-edad)/10;
 	system("cls");
 	system("color 90");
-	printf("\n\t\t\tEl número de pulsaciones por cada 10 segundos de ejercicio es %.1f ",pulsaciones); puts("BPM.");
-}
-else
-{
+	printf("\n\t\t\tEl nÃºmero de pulsaciones por cada 10 segundos de ejercicio es %.1f ",pulsaciones); puts("BPM.");
+} else {
 	system("cls");
 	system("color 40");
-	printf("\n\t\t\tOpción inválida.");
+	printf("\n\t\t\tOpciÃ³n invÃ¡lida.");
 }
 }
 
