@@ -1,6 +1,6 @@
-/*Hacer un programa que imprima el nombre de un artÌculo, clave, precio original y su precio con descuento. 
+/*Hacer un programa que imprima el nombre de un art√≠culo, clave, precio original y su precio con descuento. 
 El descuento lo hace en base a la clave, 
-Si la clave es 01 el descuento es del 10% y si la clave es 02 el descuento en del 20% (sÛlo existen dos claves).*/
+Si la clave es 01 el descuento es del 10% y si la clave es 02 el descuento en del 20% (s√≥lo existen dos claves).*/
 #include<stdio.h>
 #include<conio.h>
 #include<windows.h>
@@ -12,15 +12,14 @@ int main ()
 	int precio,clave;
 	system("color F0");
 	setlocale(LC_CTYPE, "Spanish");
-	printf("\n\t\t\tIngresa el nombre del artÌculo: ");
+	printf("\n\t\t\tIngresa el nombre del art√≠culo: ");
 	gets(articulo);
 	printf("\n\t\t\tIngresa el precio del producto: ");
 	scanf("%d",&precio);
 	printf("\n\t\t\tIngresa una clave para obtener un descuento: ");
 	scanf("%d",&clave);
 	
-	if(clave==1)
-	{
+	if(clave==1) {
 		descuento=(precio*0.10);
 		total=precio-descuento;
 		system("cls");
@@ -29,10 +28,7 @@ int main ()
 		printf("\n\t\t\tPrecio original: %d ",precio); puts("pesos");
 		printf("\t\t\tDescuento: %.2f ",descuento); puts("pesos");
 		printf("\n\t\t\tEl precio del producto es de: %.2f ",total); puts("pesos");
-	}
-	else
-	if(clave==2)
-	{
+	} else if(clave==2) {
 		descuento=(precio*0.20);
 		total=precio-descuento;
 		system("cls");
@@ -41,12 +37,10 @@ int main ()
 		printf("\n\t\t\tPrecio original: %d ",precio); puts("pesos");
 		printf("\t\t\tDescuento: %.2f ",descuento); puts("pesos");
 	    printf("\n\t\t\tEl precio del producto es de: %.2f ",total); puts("pesos");
-	}
-	else
-	{
+	} else {
 		system("cls");
 	    system("color 40");
-	    printf("\n\t\t\tOpciÛn no v·lida... ");
-	    printf("\n\t\t\tPorfavor, intÈntelo de nuevo. ");
+	    printf("\n\t\t\tOpci√≥n no v√°lida... ");
+	    printf("\n\t\t\tPorfavor, int√©ntelo de nuevo. ");
 	}
 }
