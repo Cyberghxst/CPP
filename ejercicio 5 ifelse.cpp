@@ -1,4 +1,4 @@
-//Leer dos números e imprimirlos en forma ascendente.
+//Leer dos nÃºmeros e imprimirlos en forma ascendente.
 #include<stdio.h>
 #include<stdlib.h>
 #include<conio.h>
@@ -10,12 +10,9 @@ int main(){
 	scanf("%d",&numero1);
 	printf("\n\t\t\tIngrese el segundo numero ");
 	scanf("%d",&numero2);
-	if(numero1<numero2)
-	{
+	if(numero1<numero2) {
 		printf("\n\t\t\tOrden ascendente %d ",numero1); printf("--> %d ",numero2);
-	}
-	else
-	{
+	} else {
 		printf("\n\t\t\tOrden ascendente %d ",numero2); printf("--> %d ",numero1);
 	}
 }
