@@ -1,4 +1,4 @@
-/*Leer 2 números; si son iguales que los multiplique, si el primero es mayor que el segundo que los reste y si no que los sume.*/
+/*Leer 2 nÃºmeros; si son iguales que los multiplique, si el primero es mayor que el segundo que los reste y si no que los sume.*/
 #include<stdio.h>
 #include<conio.h>
 #include<windows.h>
@@ -7,27 +7,21 @@ int main(){
 	float num1,num2,suma,resta,multi;
 	setlocale(LC_CTYPE, "Spanish");
 	system("color 5F");
-	printf("\n\t\t\tIntroduzca el primer número ");
+	printf("\n\t\t\tIntroduzca el primer nÃºmero ");
 	scanf("%f",&num1);
-	printf("\n\t\t\tIntroduzca el segundo número ");
+	printf("\n\t\t\tIntroduzca el segundo nÃºmero ");
 	scanf("%f",&num2);
-	if(num1==num2)
-	{
+	if(num1==num2) {
 		multi=num1*num2;
 		system("cls");
 		system("color B0");
-		printf("\n\t\t\tMultiplicación = %.0f ",multi);
-	}
-	else
-	if(num1>num2)
-	{
+		printf("\n\t\t\tMultiplicaciÃ³n = %.0f ",multi);
+	} else if(num1>num2) {
 		resta=num1-num2;
 		system("cls");
 		system("color B0");
 		printf("\n\t\t\tResta = %.0f ",resta);
-	}
-	else
-	{
+	} else {
 		suma=num1+num2;
 		system("cls");
 		system("color B0");
