@@ -1,4 +1,4 @@
-/*Hacer un programa que calcule el total a pagar por la compra de camisas. Si se compran tres camisas o m·s 
+/*Hacer un programa que calcule el total a pagar por la compra de camisas. Si se compran tres camisas o m√°s 
 se aplica un descuento del 20% sobre el total de la compra y si son menos de tres camisas un descuento del 10% */
 #include<stdio.h>
 #include<stdlib.h>
@@ -10,25 +10,21 @@ int main(){
 	int piezas;
 	setlocale(LC_ALL, "spanish");
 	system("color 10");
-	printf("\n\t\tPorfavor, introduzca cuantas camisas est· comprando ");
+	printf("\n\t\tPorfavor, introduzca cuantas camisas est√° comprando ");
 	scanf("%d", &piezas);
 	printf("\n\t\tPorfavor, introduzca el precio de las camisas ");
 	scanf("%f", &precio);
-	if (piezas>2)
-	{		
+	if (piezas>2) {		
 	system("color A0");
 	total=precio*piezas;
 	descuento=total*0.20;
 	desctotal=total-descuento;
-	printf("\n\n\n\t\t\tPagar·s %.2f ",desctotal);
-	}
-	else
-	if (piezas<3)
-	{
+	printf("\n\n\n\t\t\tPagar√°s %.2f ",desctotal);
+	} else if (piezas<3) {
 	total=precio*piezas;
 	descuento=total*0.10;
 	desctotal=total-descuento;
 	system("color A0");
-	printf("\n\n\n\t\t\tPagar·s %.2f ",desctotal);	
+	printf("\n\n\n\t\t\tPagar√°s %.2f ",desctotal);	
 	}
 }
