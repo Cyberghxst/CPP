@@ -1,4 +1,4 @@
-//Leer tres números diferentes e imprimir el número mayor de los tres.
+//Leer tres nÃºmeros diferentes e imprimir el nÃºmero mayor de los tres.
 #include<stdio.h>
 #include<conio.h>
 #include<windows.h>
@@ -7,36 +7,27 @@ int main(){
 	int a,b,c;
 	setlocale(LC_CTYPE, "Spanish");
 	system("color 90");
-	printf("\n\t\t\tIntroduzca primer número ");
+	printf("\n\t\t\tIntroduzca primer nÃºmero ");
 	scanf(" %d",&a);
-	printf("\n\t\t\tIntroduzca segundo número ");
+	printf("\n\t\t\tIntroduzca segundo nÃºmero ");
 	scanf(" %d",&b);
-	printf("\n\t\t\tIntroduzca tercer número ");
+	printf("\n\t\t\tIntroduzca tercer nÃºmero ");
 	scanf(" %d",&c);
-	if(a>b)
-	{
-		if(a>c)
-		{
+	if(a>b) {
+		if(a>c) {
 			system("color B0");
-			printf("\n\t\t\tEl número %d ",a); puts(" es el mayor.");
+			printf("\n\t\t\tEl nÃºmero %d ",a); puts(" es el mayor.");
+		} else {
+			system("color B0");
+			printf("\n\t\t\tEl nÃºmero %d ",c); puts(" es el mayor.");
 		}
-		else
-		{
+	} else {
+		if(b>c) {
 			system("color B0");
-			printf("\n\t\t\tEl número %d ",c); puts(" es el mayor.");
-		}
-	}
-	else
-	{
-		if(b>c)
-		{
+			printf("\n\t\t\tEl nÃºmero %d",b); puts(" es el mayor.");
+		} else {
 			system("color B0");
-			printf("\n\t\t\tEl número %d",b); puts(" es el mayor.");
-		}
-		else
-		{
-			system("color B0");
-			printf("\n\t\t\tEl número %d",c); puts(" es el mayor.");
+			printf("\n\t\t\tEl nÃºmero %d",c); puts(" es el mayor.");
 		}
 	}
 }
