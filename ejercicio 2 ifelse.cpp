@@ -18,11 +18,10 @@ int main(){
 	scanf("%d", &p3);
 	promediogeneral=(p1+p2+p3)/3;
 	system("cls");
-	if (promediogeneral>=70){		
+	if (promediogeneral>=70) {		
 		system("color A0");
 		printf("\n\n\n\t\t\t¡Felicidades! Aprobaste con %d \n\n\n\t\t\t", promediogeneral);
-	}
-	else{
+	} else {
 		system("color 40");
 		printf("\n\n\n\t\t\t¡Rayos! Tu calificación es %d \n\n\n\t\t\t", promediogeneral);	
 	}
